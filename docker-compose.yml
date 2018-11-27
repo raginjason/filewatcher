@@ -1,0 +1,7 @@
+version: "3.7"
+services:
+  filewatcher:
+    build: .
+    image: filewatcher:${FILEWATCHER_VERSION:-latest}
+    volumes:
+      - ${HOME}/data:/data
